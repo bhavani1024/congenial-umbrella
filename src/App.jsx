@@ -5,6 +5,8 @@ import { LangChainChatGroq } from './langChain_ChatGroq/LangChainChatGroq'
 import { PromptTheme } from './ThemeFromPrompt/PromptTheme'
 import {Streaming} from './langChainGroqStreaming/Streaming'
 import { ChatUi } from './chatUi/ChatUi'
+import { AiPage } from './Codeside/AiPage'
+import { useState } from 'react'
 
 function App() {
   
@@ -12,7 +14,7 @@ function App() {
   return (
     <>
       
-      <ChatUi/>
+      <AiPage/>
       
     </>
   )

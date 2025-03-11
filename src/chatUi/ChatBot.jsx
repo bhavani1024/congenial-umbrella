@@ -11,6 +11,7 @@ export const ChatBot = ({visibility}) => {
   const [chatHistory, setChatHistory] = useState([
     { text: "Hello, how can I help you?", isBot: true },
     { text: "Hi, I need some assistance.", isBot: false },
+    
   ]);
 
   const llm = new ChatGroq({
@@ -34,7 +35,7 @@ export const ChatBot = ({visibility}) => {
     const aiReply = await llm.invoke([
       {
         role: "system",
-        content: "you are to answer the question that the user has",
+        content: "the user has a question regarding the coding problem , you are to only give suggestion for the solution and not the exact solution",
       },
       { role: "user", content: userQuery },
     ]);
@@ -70,9 +71,7 @@ export const ChatBot = ({visibility}) => {
            flushSync(()=>{
             handleChatUpdate()
            })
-           flushSync(()=>{
-            getAiAnswer()
-           })
+          
            
           }}
         >

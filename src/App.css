@@ -113,12 +113,13 @@ footer {
   flex-wrap: nowrap;
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  width: 95%;
 }
 #ChatBotChatMessages{
   display: flex;
   flex-direction: column;
-  
+  overflow-y: auto;
+  height: 80%;
 }
 
 .ChatBotHidden{
