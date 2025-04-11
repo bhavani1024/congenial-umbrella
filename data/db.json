@@ -1,0 +1,46 @@
+{
+    "items": {
+      "fruits": {
+        "apple": {
+          "price": 1.99,
+          "description": "A crunchy and juicy red apple"
+        },
+        "banana": {
+          "price": 0.99,
+          "description": "A yellow and creamy banana"
+        },
+        "orange": {
+          "price": 2.49,
+          "description": "A sweet and tangy orange"
+        }
+      },
+      "vegetables": {
+        "carrot": {
+          "price": 1.29,
+          "description": "A crunchy and sweet carrot"
+        },
+        "broccoli": {
+          "price": 1.99,
+          "description": "A green and nutritious broccoli"
+        },
+        "spinach": {
+          "price": 0.99,
+          "description": "A healthy and flavorful spinach"
+        }
+      },
+      "meat": {
+        "chicken": {
+          "price": 5.99,
+          "description": "A tender and juicy chicken breast"
+        },
+        "beef": {
+          "price": 7.99,
+          "description": "A rich and flavorful beef steak"
+        },
+        "pork": {
+          "price": 6.99,
+          "description": "A tender and flavorful pork chop"
+        }
+      }
+    }
+  }

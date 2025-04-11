@@ -3,6 +3,7 @@ import { ChatGroq } from "@langchain/groq";
 const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 import { flushSync } from "react-dom";
 
+
 export const ChatBot = ({visibility}) => {
   console.log(visibility+ " test");
   
@@ -43,6 +44,8 @@ export const ChatBot = ({visibility}) => {
   };
 
   return (
+
+
     <div id="ChatBotContainer" className={visibility ? "" : "ChatBotHidden"}>
       <div id="ChatBotChatMessages">
         {chatHistory.map((message, index) => (
@@ -79,5 +82,7 @@ export const ChatBot = ({visibility}) => {
         </button>
       </div>
     </div>
+    
   );
+  
 };

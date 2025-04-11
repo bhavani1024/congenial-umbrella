@@ -1,4 +1,4 @@
-.container {
+/* .container {
   
   margin: 0 auto;
   padding: 20px;
@@ -79,6 +79,7 @@ footer {
 
   border: rgb(175, 79, 79) solid 2px;
   padding: 5px;
+  resize: both;
 }
 #ChatBotInput{
   
@@ -125,3 +126,57 @@ footer {
 .ChatBotHidden{
   display: none;
 }
+
+
+
+#AiPageContainer{
+  
+
+  height: 100%;
+  width: 100%;
+
+  border: rgb(175, 79, 79) solid 2px;
+  padding: 5px;
+  resize: both;
+}
+#AiPageInput{
+  
+  bottom: 5px;
+  width: 90%;
+  flex-grow: 8;
+ 
+}
+#AiPageSubmit{
+  flex-grow: 2;
+}
+.bot-message {
+  background-color: #cce5ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #ffffcc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  align-self: flex-end;
+}
+#AiPageFooter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  bottom: 20px;
+  width: 95%;
+}
+#AiPageChatMessages{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: auto;
+} */

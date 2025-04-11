@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { ChatGroq } from "@langchain/groq";
+import { ChatFeed, Message } from 'react-chat-ui'
 const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 export const Streaming = () => {
 
     const [aiResponse, setAiResponse] = useState("")
-    const [allChats, setAllChats] = useState()
+    const [allChats, setAllChats] = useState([])
 
 
     const llm = new ChatGroq({
@@ -22,7 +23,9 @@ export const Streaming = () => {
                 "count from 1 to 10"
               );
 
-              
+              const handleAiResponse = ()=>{
+
+              }
               
               for await (const chunk of stream) {
                 // console.log(`${chunk.content}`);
